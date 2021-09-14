@@ -1,4 +1,5 @@
-import React, {useRef, useState, useEffect} from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, {useRef, useEffect} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View, Animated} from 'react-native';
 import Svg, {G, Circle} from 'react-native-svg';
 
@@ -42,7 +43,7 @@ const NextButton = ({percentage}) => {
             r={radius}
             strokeWidth={strokeWidth}
             strokeDasharray={circumference}
-            strokeDashoffset={circumference - percentage * 4 + 4}
+            strokeDashoffset={circumference - percentage * 4}
           />
         </G>
       </Svg>
