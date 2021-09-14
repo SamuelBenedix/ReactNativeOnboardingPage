@@ -9,7 +9,7 @@ const OnBoardingItem = ({item}) => {
       <Image
         source={item.image}
         style={(styles.image, {width, resizeMode: 'contain'})}
-        height={500}
+        height={300}
       />
       <View style={{flex: 0.3}}>
         <Text style={styles.title}>{item.title}</Text>

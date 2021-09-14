@@ -21,20 +21,7 @@ const NextButton = ({percentage}) => {
 
   useEffect(() => {
     animation(percentage);
-  }, [percentage]);
-
-  useEffect(() => {
-    progressAnimation.addListener(
-      value => {
-        const strokeDashOffset =
-          circumference - (circumference * value.value) / 100;
-        if (progressRef?.current) {
-          progressRef.current.setNativeProps({strokeDashOffset});
-        }
-      },
-      [percentage],
-    );
-  });
+  }, [animation, percentage]);
 
   return (
     <View style={styles.container}>
@@ -55,10 +42,14 @@ const NextButton = ({percentage}) => {
             r={radius}
             strokeWidth={strokeWidth}
             strokeDasharray={circumference}
+            strokeDashoffset={circumference - percentage * 4 + 4}
           />
         </G>
       </Svg>
-      <TouchableOpacity style={styles.button} activeOpacity={0.6}>
+      <TouchableOpacity
+        style={styles.button}
+        activeOpacity={0.6}
+        onPress={() => {}}>
         <Text>test</Text>
       </TouchableOpacity>
     </View>
