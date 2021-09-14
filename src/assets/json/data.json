@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Quick & Easy Payments",
+      "desc": "Grow your bussiness by accepting card payments",
+      "image": "BookingService"
+    },
+    {
+      "id": 2,
+      "title": "Smart Point of Sale",
+      "desc": "Complete point of sale software",
+      "image": "BookingService"
+    },
+    {
+      "id": 3,
+      "title": "Instant Notification",
+      "desc": "Instant notification",
+      "image": "BookingService"
+    }
+  ]
+}
